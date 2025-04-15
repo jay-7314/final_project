@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navigation from "./component/navigation";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head />
-      <body className="flex flex-col">
+      <body className="flex flex-col" suppressHydrationWarning={true}>
         <div>{children}</div>
       </body>
     </html>

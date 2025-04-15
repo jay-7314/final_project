@@ -2,9 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Navigation() {
-  const categories = ["home", "MyPlan", "TeamPlan", "Vacations", "Settings"];
+  const categories = [
+    "home",
+    "community",
+    "myplan",
+    "teamplan",
+    "approval",
+    "mail",
+    "settings",
+  ];
   return (
-    <div className="flex justify-start flex-col border-r-2 border-dashed border-gray-300 mr-5 my-5 p-10">
+    <div className="flex justify-start flex-col border-r-2 border-dashed border-gray-300 my-5 p-8 w-50">
       <div className="flex justify-center items-center">
         <Image
           src="/non-Picture.png"
